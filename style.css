@@ -534,3 +534,55 @@ h1, h2, h3, .logo {
   .topbar { padding: 10px 14px; }
   .hero { padding: 20px 14px 18px; }
 }
+
+/* ===== LANGUAGE BUTTON ===== */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  font-family: 'Exo 2', sans-serif;
+  padding: 5px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.lang-btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* LTR overrides when English */
+[data-lang="en"] {
+  direction: ltr;
+  text-align: left;
+}
+
+[data-lang="en"] .footer {
+  flex-direction: row;
+}
+
+[data-lang="en"] .popular-tag {
+  right: auto;
+  left: 10px;
+}
+
+[data-lang="en"] .modal-close {
+  left: auto;
+  right: 16px;
+}
+
+[data-lang="en"] .modal input {
+  text-align: left;
+}
+
+[data-lang="en"] .apple-pay-banner {
+  flex-direction: row;
+}
