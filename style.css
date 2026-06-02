@@ -299,8 +299,10 @@ h1, h2, h3, .logo {
 }
 
 .apple-logo {
-  font-size: 42px;
-  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .apple-info h3 {
@@ -503,15 +505,13 @@ h1, h2, h3, .logo {
   background: #000;
   color: #fff;
   border: 2px solid #555;
-  padding: 13px;
+  padding: 10px 13px;
   border-radius: 12px;
-  font-size: 18px;
-  font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  min-height: 52px;
   transition: background 0.2s, border-color 0.2s;
 }
 
