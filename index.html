@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salluom Store — Blockspin Cash</title>
+  <meta name="description" content="اشتري Blockspin Cash بأفضل الأسعار مع توصيل فوري ودفع آمن عبر Apple Pay" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="logo">SALLUOM <span>STORE</span></div>
+    <div class="badge-live"><span class="dot"></span> متجر مفتوح</div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-title">اشترِ <span class="highlight">Blockspin Cash</span><br>بأفضل الأسعار</div>
+    <div class="hero-sub">توصيل فوري · آمن 100% · دفع بـ Apple Pay</div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-val">+5000</div><div class="stat-lbl">طلب منجز</div></div>
+      <div class="stat"><div class="stat-val">⚡ 60 ث</div><div class="stat-lbl">متوسط التوصيل</div></div>
+      <div class="stat"><div class="stat-val">4.9 ★</div><div class="stat-lbl">تقييم العملاء</div></div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <p class="section-title">🎮 اختر الباقة</p>
+  <div class="products">
+
+    <div class="product-card" onclick="openModal('Starter Pack','500,000','1.99')">
+      <div class="product-img"><div class="coin-icon">🪙</div></div>
+      <div class="product-body">
+        <div class="product-name">Starter Pack</div>
+        <div class="product-amount">500,000 Blockspin Cash</div>
+        <div class="product-price">$1.99 <span>/ باقة</span></div>
+        <button class="buy-btn" onclick="event.stopPropagation();openModal('Starter Pack','500,000','1.99')">اشتري الآن</button>
+      </div>
+    </div>
+
+    <div class="product-card featured" onclick="openModal('Gold Pack','1,000,000','3.49')">
+      <div class="popular-tag">★ الأشهر</div>
+      <div class="product-img"><div class="coin-icon">💰</div></div>
+      <div class="product-body">
+        <div class="product-name">Gold Pack</div>
+        <div class="product-amount">1,000,000 Blockspin Cash</div>
+        <div class="product-price">$3.49 <span>/ باقة</span></div>
+        <button class="buy-btn" onclick="event.stopPropagation();openModal('Gold Pack','1,000,000','3.49')">اشتري الآن</button>
+      </div>
+    </div>
+
+    <div class="product-card" onclick="openModal('Diamond Pack','5,000,000','14.99')">
+      <div class="product-img"><div class="coin-icon">💎</div></div>
+      <div class="product-body">
+        <div class="product-name">Diamond Pack</div>
+        <div class="product-amount">5,000,000 Blockspin Cash</div>
+        <div class="product-price">$14.99 <span>/ باقة</span></div>
+        <button class="buy-btn" onclick="event.stopPropagation();openModal('Diamond Pack','5,000,000','14.99')">اشتري الآن</button>
+      </div>
+    </div>
+
+    <div class="product-card" onclick="openModal('Legend Pack','10,000,000','24.99')">
+      <div class="product-img"><div class="coin-icon">🏆</div></div>
+      <div class="product-body">
+        <div class="product-name">Legend Pack</div>
+        <div class="product-amount">10,000,000 Blockspin Cash</div>
+        <div class="product-price">$24.99 <span>/ باقة</span></div>
+        <button class="buy-btn" onclick="event.stopPropagation();openModal('Legend Pack','10,000,000','24.99')">اشتري الآن</button>
+      </div>
+    </div>
+
+    <div class="product-card" onclick="openModal('Elite Pack','50,000,000','99.99')">
+      <div class="product-img"><div class="coin-icon">👑</div></div>
+      <div class="product-body">
+        <div class="product-name">Elite Pack</div>
+        <div class="product-amount">50,000,000 Blockspin Cash</div>
+        <div class="product-price">$99.99 <span>/ باقة</span></div>
+        <button class="buy-btn" onclick="event.stopPropagation();openModal('Elite Pack','50,000,000','99.99')">اشتري الآن</button>
+      </div>
+    </div>
+
+    <div class="product-card" onclick="openModal('Whale Pack','100,000,000','179.99')">
+      <div class="product-img"><div class="coin-icon">💫</div></div>
+      <div class="product-body">
+        <div class="product-name">Whale Pack</div>
+        <div class="product-amount">100,000,000 Blockspin Cash</div>
+        <div class="product-price">$179.99 <span>/ باقة</span></div>
+        <button class="buy-btn" onclick="event.stopPropagation();openModal('Whale Pack','100,000,000','179.99')">اشتري الآن</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- DELIVERY -->
+  <div class="delivery-strip">
+    <span class="icon">⚡</span>
+    <div><strong>توصيل فوري:</strong> سيصلك Cash خلال 60 ثانية بعد تأكيد الدفع مباشرة إلى حسابك.</div>
+  </div>
+
+  <!-- PAYMENT -->
+  <div class="payment-section">
+    <p class="payment-title">💳 طريقة الدفع</p>
+    <div class="apple-pay-banner">
+      <div class="apple-logo">🍎</div>
+      <div class="apple-info">
+        <h3>Apple Pay</h3>
+        <p>ادفع بسرعة وأمان باستخدام Face ID أو Touch ID مباشرة من هاتفك أو ساعتك.</p>
+        <span class="apple-badge">✓ مدعوم &nbsp;|&nbsp; آمن 100%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <p class="section-title">❓ الأسئلة الشائعة</p>
+  <div class="faq-section">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">كيف يصلني الـ Cash بعد الشراء؟ <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">بعد إتمام الدفع عبر Apple Pay، ستتلقى الـ Cash مباشرة في حسابك داخل اللعبة خلال 60 ثانية. تأكد من إدخال معرف اللاعب بشكل صحيح.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">هل Apple Pay آمن؟ <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">نعم، Apple Pay من أكثر طرق الدفع أمانًا في العالم. لا تُشارك بيانات بطاقتك مع المتجر أبدًا، ويتم التحقق بـ Face ID أو Touch ID.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">ماذا أفعل إذا لم يصلني الـ Cash؟ <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">تواصل مع الدعم فورًا وسنحل المشكلة في أقل من 5 دقائق مع ضمان استرداد كامل إذا تعذر التوصيل.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">هل يمكنني الاسترداد بعد الشراء؟ <span class="faq-arrow">▾</span></div>
+      <div class="faq-a">في حال عدم التوصيل يُعاد المبلغ كاملًا. بعد التوصيل الناجح لا يمكن الاسترداد لأن المنتج رقمي يُسلَّم فور الشراء.</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>© 2025 Salluom Store</div>
+    <div class="footer-links">
+      <a href="#">الشروط</a>
+      <a href="#">الخصوصية</a>
+      <a href="#">الدعم</a>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-bg" id="modalBg" onclick="closeModalOutside(event)">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">×</button>
+      <div class="modal-store-name">Salluom Store</div>
+      <h3 id="modalTitle"></h3>
+      <div id="modalAmount" class="modal-amount"></div>
+      <div class="price-big" id="modalPrice"></div>
+
+      <label>معرف اللاعب (Player ID) *</label>
+      <input type="text" id="playerId" placeholder="أدخل معرفك في اللعبة" />
+
+      <label>البريد الإلكتروني (للإيصال) *</label>
+      <input type="email" id="emailIn" placeholder="email@example.com" />
+
+      <button class="apple-pay-btn" onclick="confirmPay()">
+        <span>🍎</span> Pay
+      </button>
+      <div class="modal-note">🔒 الدفع يتم عبر Apple Pay — Face ID / Touch ID</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
